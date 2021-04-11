@@ -22,21 +22,21 @@ int main(void) {
 	
 	while(1) {
 		tmp1 = PINA & 0x01;
-                tmp1 = PINA & 0x02;
-                tmp1 = PINA & 0x04;
-                tmp1 = PINA & 0x08;
+                tmp2 = PINA & 0x02;
+                tmp3 = PINA & 0x04;
+                tmp4 = PINA & 0x08;
 
 
 	if (tmp1 != 0x01){
 		cntavail +=1; 
 	}
-        if (tmp1 != 0x02){
+        if (tmp2 != 0x02){
                 cntavail +=1;
         }
-        if (tmp1 != 0x04){
+        if (tmp3 != 0x04){
                 cntavail +=1;
         }
-        if (tmp1 != 0x08){
+        if (tmp4 != 0x08){
                 cntavail +=1;
         }
 	PORTC = cntavail;

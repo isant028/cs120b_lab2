@@ -35,7 +35,8 @@ int main(void) {
 		}
 
 		if((tmpA-tmpC) > 80 || (tmpC -tmpA)>80){
-			tmpD = tmD | 0x02; 
+			tmpD = tmpD | 0x02; 
+    }
 		}
 		PORTD = tmpd; 
 		return 0;
